@@ -1,0 +1,64 @@
+.navbar {
+    height: 50px;
+    .container {
+        max-width: 100%;
+        .cartIcon, .searchIcon, .profileImage, .favIcon, .homeIcon {
+            cursor: pointer;
+        }
+        // .cartIcon, .searchIcon {
+        //     margin-right: 50px;
+        // }
+        .searchBox {
+            // width: 100%;
+            // margin-left: 50px;
+            input[type=text] {
+                // width: 80%!important;
+                padding: 5px 25px 5px 5px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 15px;
+            }
+            .clearIcon {
+                cursor: pointer;
+                position: relative;
+                right: 25px;
+            }
+        }
+        .grid {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        .grid-item-left {
+            width: 40%;
+            color: white;
+            vertical-align: middle;
+        }
+        .grid-item-right {
+            position: relative;
+            display: flex;
+            width: 60%;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .site-header-icon {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 10px 25px;
+            margin: 0;
+        }
+        .homeIcon {
+            .navbar-brand {
+                margin-right: 0;
+            }
+        }
+        @media only screen and (max-width: 749px) {
+            .site-header-icon {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 10px 5px;
+                margin: 0;
+            }
+        }
+    }
+}
